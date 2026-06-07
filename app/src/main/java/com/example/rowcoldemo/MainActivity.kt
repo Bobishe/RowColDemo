@@ -5,7 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -36,6 +38,13 @@ fun RowColScreen(modifier: Modifier = Modifier) {
         Text("Первый")
         Text("Второй")
         Text("Третий")
+
+        // Дизайн 2. Row — горизонтальное размещение
+        Row(modifier = Modifier.fillMaxWidth().padding(top = 16.dp)) {
+            Text("A ")
+            Text("B ")
+            Text("C ")
+        }
     }
 }
 
